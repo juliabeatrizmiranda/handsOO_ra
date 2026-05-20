@@ -1,0 +1,23 @@
+package listadecompras;
+import java.util.ArrayList;
+public class ListaDeCompras {
+    public static void main(String[] args) {
+       ArrayList<String> listaCompras;
+        listaCompras = new ArrayList<>();
+
+        // Adicionando 5 produtos
+        listaCompras.add("Arroz");
+        listaCompras.add("Feijão");
+        listaCompras.add("Leite");
+        listaCompras.add("Macarrão");
+        listaCompras.add("Cafe");
+        System.out.println("Produtos cadastrados:");
+
+        for (String produto : listaCompras) {
+            System.out.println("- " + produto);
+        }
+
+        System.out.println("\nQuantidade total de produtos: " + listaCompras.size());
+    }
+    
+}
