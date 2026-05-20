@@ -1,0 +1,34 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class FilaClientes {
+
+    public static void main(String[] args) {
+
+        // Criando a fila
+        Queue<String> fila = new LinkedList<>();
+
+        // Adicionando 5 clientes
+        fila.add("Ana");
+        fila.add("Carlos");
+        fila.add("Maria");
+        fila.add("Pedro");
+        fila.add("Lucas");
+
+        // Mostrando a fila
+        System.out.println("Fila inicial:");
+        System.out.println(fila);
+
+        // Mostrando próximo cliente
+        System.out.println("\nPróximo cliente: " + fila.peek());
+
+        // Atendendo 2 clientes
+        System.out.println("\nAtendendo clientes...");
+        fila.poll();
+        fila.poll();
+
+        // Mostrando fila atualizada
+        System.out.println("\nFila atualizada:");
+        System.out.println(fila);
+    }
+}
