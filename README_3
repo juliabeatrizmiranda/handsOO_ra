@@ -1,0 +1,26 @@
+package listapresenca;
+import java.util.HashSet;
+public class ListaPresenca {
+    public static void main(String[] args) {
+        // Criando o HashSet
+        HashSet<String> alunos = new HashSet<>();
+
+        // Adicionando nomes
+        alunos.add("Ana");
+        alunos.add("Carlos");
+        alunos.add("Maria");
+        alunos.add("Ana");
+        alunos.add("Carlos");
+        alunos.add("Pedro");
+
+        // Mostrando alunos presentes
+        System.out.println("Alunos presentes:");
+
+        for (String aluno : alunos) {
+            System.out.println(aluno);
+        }
+
+        // Mostrando quantidade total
+        System.out.println("\nQuantidade de alunos presentes: " + alunos.size());
+    }
+}
