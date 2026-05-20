@@ -1,0 +1,36 @@
+package notas;
+import java.util.ArrayList;
+public class Notas {
+
+    public static void main(String[] args) {
+           // Criando a lista de notas
+        ArrayList<Double> notas = new ArrayList<>();
+
+        // Adicionando 4 notas
+        notas.add(8.0);
+        notas.add(7.5);
+        notas.add(6.0);
+        notas.add(9.0);
+
+        // Variável para guardar a soma
+        double soma = 0;
+
+        // Somando todas as notas
+        for (double nota : notas) {
+            soma += nota;
+        }
+
+        // Calculando a média
+        double media = soma / notas.size();
+
+        // Mostrando a média
+        System.out.println("Média da turma: " + media);
+
+        // Verificando se a média é maior ou igual a 7
+        if (media >= 7) {
+            System.out.println("Turma aprovada!");
+        } else {
+            System.out.println("Turma reprovada!");
+        }
+    }
+}
